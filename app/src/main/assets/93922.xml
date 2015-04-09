@@ -1,0 +1,242 @@
+<dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+    <head>
+        <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+            <creation-date refresh-frequency="PT1H">2015-04-07T19:21:09-07:00</creation-date>
+            <category>current observations and forecast</category>
+        </product>
+        <source>
+            <production-center>San Francisco Bay Area/Monterey, CA</production-center>
+            <credit>http://www.wrh.noaa.gov/mtr</credit>
+            <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+        </source>
+    </head>
+    <data type="forecast">
+        <location>
+            <location-key>point1</location-key>
+            <point latitude="36.55" longitude="-121.93"/>
+            <area-description>2 Miles SSE Pebble Beach CA</area-description>
+            <height datum="mean sea level" height-units="feet">0</height>
+        </location>
+        <moreWeatherInformation applicable-location="point1">
+            http://forecast.weather.gov/MapClick.php?lat=36.55&amp;lon=-121.93
+        </moreWeatherInformation>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p12h-n14-1</layout-key>
+            <start-valid-time period-name="Tonight">2015-04-07T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2015-04-08T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Wednesday Night">2015-04-08T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2015-04-09T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2015-04-09T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Friday">2015-04-10T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Friday Night">2015-04-10T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Saturday">2015-04-11T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Saturday Night">2015-04-11T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Sunday">2015-04-12T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Sunday Night">2015-04-12T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Monday">2015-04-13T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2015-04-13T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2015-04-14T06:00:00-07:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p24h-n7-1</layout-key>
+            <start-valid-time period-name="Tonight">2015-04-07T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Wednesday Night">2015-04-08T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2015-04-09T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Friday Night">2015-04-10T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Saturday Night">2015-04-11T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Sunday Night">2015-04-12T18:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2015-04-13T18:00:00-07:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p24h-n7-2</layout-key>
+            <start-valid-time period-name="Wednesday">2015-04-08T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2015-04-09T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Friday">2015-04-10T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Saturday">2015-04-11T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Sunday">2015-04-12T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Monday">2015-04-13T06:00:00-07:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2015-04-14T06:00:00-07:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+                <name>Daily Minimum Temperature</name>
+                <value>44</value>
+                <value>42</value>
+                <value>43</value>
+                <value>43</value>
+                <value>44</value>
+                <value>44</value>
+                <value>44</value>
+            </temperature>
+            <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-2">
+                <name>Daily Maximum Temperature</name>
+                <value>60</value>
+                <value>61</value>
+                <value>61</value>
+                <value>62</value>
+                <value>61</value>
+                <value>61</value>
+                <value>61</value>
+            </temperature>
+            <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-1">
+                <name>12 Hourly Probability of Precipitation</name>
+                <value>20</value>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </probability-of-precipitation>
+            <weather time-layout="k-p12h-n14-1">
+                <name>Weather Type, Coverage, Intensity</name>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Clear"/>
+                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Partly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Clear"/>
+                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Partly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Clear"/>
+                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Mostly Clear"/>
+                <weather-conditions weather-summary="Sunny"/>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p12h-n14-1">
+                <name>Conditions Icon</name>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nshra20.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nfew.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/few.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nfew.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/few.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nfew.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/few.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nfew.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/few.png
+                </icon-link>
+            </conditions-icon>
+            <wordedForecast time-layout="k-p12h-n14-1" dataSource="mtrNetcdf" wordGenerator="markMitchell">
+                <name>Text Forecast</name>
+                <text>
+                    A 20 percent chance of showers. Mostly cloudy, with a low around 44. West wind 3 to 8 mph.
+                </text>
+                <text>
+                    Mostly sunny, with a high near 60. Calm wind becoming west 5 to 9 mph in the afternoon.
+                </text>
+                <text>
+                    Mostly clear, with a low around 42. West northwest wind 5 to 9 mph becoming light and variable.
+                </text>
+                <text>
+                    Sunny, with a high near 61. East northeast wind around 7 mph becoming north northwest in the morning.
+                </text>
+                <text>
+                    Partly cloudy, with a low around 43. West wind 5 to 9 mph.
+                </text>
+                <text>Mostly sunny, with a high near 61.</text>
+                <text>Mostly clear, with a low around 43.</text>
+                <text>Sunny, with a high near 62.</text>
+                <text>Partly cloudy, with a low around 44.</text>
+                <text>Mostly sunny, with a high near 61.</text>
+                <text>Mostly clear, with a low around 44.</text>
+                <text>Sunny, with a high near 61.</text>
+                <text>Mostly clear, with a low around 44.</text>
+                <text>Sunny, with a high near 61.</text>
+            </wordedForecast>
+        </parameters>
+    </data>
+    <data type="current observations">
+        <location>
+            <location-key>point1</location-key>
+            <point latitude="36.59056" longitude="-121.84750"/>
+            <area-description>Monterey, Monterey Peninsula Airport, CA</area-description>
+            <height datum="mean sea level" height-units="feet">253</height>
+        </location>
+        <moreWeatherInformation applicable-location="point1">
+            http://www.wrh.noaa.gov/total_forecast/other_obs.php?wfo=mtr&amp;zone=CAZ530
+        </moreWeatherInformation>
+        <time-layout time-coordinate="local">
+            <layout-key>k-p1h-n1-1</layout-key>
+            <start-valid-time period-name="current">2015-04-07T21:09:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">
+                <value>52</value>
+            </temperature>
+            <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">
+                <value>46</value>
+            </temperature>
+            <humidity type="relative" time-layout="k-p1h-n1-1">
+                <value>82</value>
+            </humidity>
+            <weather time-layout="k-p1h-n1-1">
+                <name>Weather Type, Coverage, Intensity</name>
+                <weather-conditions weather-summary="Overcast"/>
+                <weather-conditions>
+                    <value>
+                        <visibility units="statute miles">10.00</visibility>
+                    </value>
+                </weather-conditions>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">
+                <name>Conditions Icon</name>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/novc.png
+                </icon-link>
+            </conditions-icon>
+            <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
+                <value>220</value>
+            </direction>
+            <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">
+                <value>NA</value>
+            </wind-speed>
+            <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">
+                <value>4</value>
+            </wind-speed>
+            <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">
+                <value>30.05</value>
+            </pressure>
+        </parameters>
+    </data>
+</dwml>
