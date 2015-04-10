@@ -1,9 +1,12 @@
 package com.example.deleon118.project1;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +15,13 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //declare some of the fields you're gonna mess with
+        Button go = (Button)findViewById(R.id.button);
+        ImageView centerPic = (ImageView)findViewById(R.id.pic);
+        EditText enterZip = (EditText)findViewById(R.id.editZip);
+        //we're going to demo with chicago first. Get the text and set it.
+        //test change.
+        centerPic.setImageResource(R.drawable.bkn);
     }
 
 
