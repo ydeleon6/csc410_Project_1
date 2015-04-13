@@ -117,6 +117,122 @@
             android:text=" Conditions go here"
             android:id="@+id/conditionsText" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Temperature"
+            android:id="@+id/textView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="_____"
+            android:id="@+id/textView4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Dew Point"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/placeholder"
+            android:id="@+id/textView6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Relative Humidity"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="8"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/placeholder"
+            android:id="@+id/textView8" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="9"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pressure"
+            android:id="@+id/textView9" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="10"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/placeholder"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Visbility"
+            android:id="@+id/textView2-3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/placeholder"
+            android:id="@+id/textView2-4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Windspeed"
+            android:id="@+id/textView2-5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/placeholder"
+            android:id="@+id/textView2-6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Gusts"
+            android:id="@+id/textView2-7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="8"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/placeholder"
+            android:id="@+id/textView2-8" />
+
     </GridLayout>
 
 </RelativeLayout>
