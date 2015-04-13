@@ -5,4 +5,5 @@
     <string name="zip_code">Zip Code:</string>
     <string name="go">Go!</string>
     <string name="ctime">Current Time:</string>
+    <string name="placeholder">________</string>
 </resources>
