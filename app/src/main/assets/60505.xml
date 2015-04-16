@@ -1,7 +1,7 @@
 <dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
     <head>
         <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
-            <creation-date refresh-frequency="PT1H">2015-04-07T21:28:51-05:00</creation-date>
+            <creation-date refresh-frequency="PT1H">2015-04-16T00:17:13-05:00</creation-date>
             <category>current observations and forecast</category>
         </product>
         <source>
@@ -23,71 +23,71 @@
         </moreWeatherInformation>
         <time-layout time-coordinate="local" summarization="12hourly">
             <layout-key>k-p12h-n14-1</layout-key>
-            <start-valid-time period-name="Overnight">2015-04-07T06:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Wednesday">2015-04-07T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Wednesday Night">2015-04-08T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Thursday">2015-04-08T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Thursday Night">2015-04-09T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Friday">2015-04-09T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Friday Night">2015-04-10T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Saturday">2015-04-10T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Saturday Night">2015-04-11T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Sunday">2015-04-11T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Sunday Night">2015-04-12T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Monday">2015-04-12T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Monday Night">2015-04-13T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Tuesday">2015-04-13T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Overnight">2015-04-15T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2015-04-15T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2015-04-16T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Friday">2015-04-16T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Friday Night">2015-04-17T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Saturday">2015-04-17T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Saturday Night">2015-04-18T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday">2015-04-18T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday Night">2015-04-19T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday">2015-04-19T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2015-04-20T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2015-04-20T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday Night">2015-04-21T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2015-04-21T12:00:00-05:00</start-valid-time>
         </time-layout>
         <time-layout time-coordinate="local" summarization="12hourly">
             <layout-key>k-p24h-n7-1</layout-key>
-            <start-valid-time period-name="Overnight">2015-04-07T06:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Wednesday Night">2015-04-08T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Thursday Night">2015-04-09T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Friday Night">2015-04-10T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Saturday Night">2015-04-11T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Sunday Night">2015-04-12T00:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Monday Night">2015-04-13T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Overnight">2015-04-15T06:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2015-04-16T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Friday Night">2015-04-17T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Saturday Night">2015-04-18T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday Night">2015-04-19T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2015-04-20T00:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday Night">2015-04-21T00:00:00-05:00</start-valid-time>
         </time-layout>
         <time-layout time-coordinate="local" summarization="12hourly">
             <layout-key>k-p24h-n7-2</layout-key>
-            <start-valid-time period-name="Wednesday">2015-04-07T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Thursday">2015-04-08T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Friday">2015-04-09T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Saturday">2015-04-10T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Sunday">2015-04-11T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Monday">2015-04-12T12:00:00-05:00</start-valid-time>
-            <start-valid-time period-name="Tuesday">2015-04-13T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2015-04-15T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Friday">2015-04-16T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Saturday">2015-04-17T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Sunday">2015-04-18T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Monday">2015-04-19T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2015-04-20T12:00:00-05:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2015-04-21T12:00:00-05:00</start-valid-time>
         </time-layout>
         <parameters applicable-location="point1">
             <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
                 <name>Daily Minimum Temperature</name>
-                <value>41</value>
                 <value>45</value>
                 <value>43</value>
-                <value>35</value>
-                <value>42</value>
-                <value>54</value>
-                <value>49</value>
+                <value>50</value>
+                <value>45</value>
+                <value>45</value>
+                <value>36</value>
+                <value>38</value>
             </temperature>
             <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-2">
                 <name>Daily Maximum Temperature</name>
-                <value>52</value>
-                <value>73</value>
+                <value>65</value>
+                <value>72</value>
+                <value>63</value>
+                <value>60</value>
                 <value>57</value>
-                <value>59</value>
-                <value>67</value>
-                <value>68</value>
-                <value>62</value>
+                <value>55</value>
+                <value>56</value>
             </temperature>
             <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-1">
                 <name>12 Hourly Probability of Precipitation</name>
                 <value>30</value>
+                <value>30</value>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
                 <value>20</value>
-                <value>90</value>
-                <value>50</value>
-                <value>60</value>
-                <value xsi:nil="true"/>
-                <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
@@ -98,109 +98,103 @@
             </probability-of-precipitation>
             <weather time-layout="k-p12h-n14-1">
                 <name>Weather Type, Coverage, Intensity</name>
-                <weather-conditions weather-summary="Chance Thunderstorms"/>
-                <weather-conditions weather-summary="Slight Chc Showers"/>
-                <weather-conditions weather-summary="Thunderstorms"/>
-                <weather-conditions weather-summary="Severe Thunderstorms"/>
-                <weather-conditions weather-summary="Severe Thunderstorms"/>
-                <weather-conditions weather-summary="Breezy"/>
-                <weather-conditions weather-summary="Mostly Clear"/>
-                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Chance Showers"/>
+                <weather-conditions weather-summary="Chance Showers"/>
                 <weather-conditions weather-summary="Partly Cloudy"/>
-                <weather-conditions weather-summary="Partly Sunny"/>
-                <weather-conditions weather-summary="Chance Thunderstorms"/>
-                <weather-conditions weather-summary="Thunderstorms Likely"/>
-                <weather-conditions weather-summary="Chance Thunderstorms"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
+                <weather-conditions weather-summary="Chance Showers"/>
+                <weather-conditions weather-summary="Chance Showers"/>
+                <weather-conditions weather-summary="Chance Showers"/>
+                <weather-conditions weather-summary="Partly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
                 <weather-conditions weather-summary="Slight Chc Showers"/>
             </weather>
             <conditions-icon type="forecast-NWS" time-layout="k-p12h-n14-1">
                 <name>Conditions Icon</name>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/ntsra30.png
+                    http://forecast.weather.gov/images/wtf/medium/nshra30.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/shra20.png
-                </icon-link>
-                <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/ntsra90.png
-                </icon-link>
-                <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/tsra50.png
-                </icon-link>
-                <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nscttsra60.png
-                </icon-link>
-                <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/wind.png
-                </icon-link>
-                <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nfew.png
-                </icon-link>
-                <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/few.png
+                    http://forecast.weather.gov/images/wtf/medium/shra30.png
                 </icon-link>
                 <icon-link>
                     http://forecast.weather.gov/images/wtf/medium/nsct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/bkn.png
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/ntsra.png
+                    http://forecast.weather.gov/images/wtf/medium/nbkn.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/tsra.png
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/ntsra.png
+                    http://forecast.weather.gov/images/wtf/medium/nshra20.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/shra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nshra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/shra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/hi_nshwrs.png
                 </icon-link>
                 <icon-link>
                     http://forecast.weather.gov/images/wtf/medium/hi_shwrs.png
                 </icon-link>
             </conditions-icon>
-            <hazards time-layout="">
-                <name>Watches, Warnings, and Advisories</name>
-                <hazard-conditions>
-                    <hazard headline="Hazardous Weather Outlook">
-                        <hazardTextURL>
-                            http://forecast.weather.gov/showsigwx.php?warnzone=ILZ012&amp;warncounty=ILC089&amp;firewxzone=ILZ012&amp;local_place1=Aurora+IL&amp;product1=Hazardous+Weather+Outlook
-                        </hazardTextURL>
-                    </hazard>
-                </hazard-conditions>
-            </hazards>
             <wordedForecast time-layout="k-p12h-n14-1" dataSource="lotNetcdf" wordGenerator="markMitchell">
                 <name>Text Forecast</name>
                 <text>
-                    A chance of showers, with thunderstorms also possible after 1am. Areas of fog. Otherwise, cloudy, with a low around 41. East wind 10 to 15 mph, with gusts as high as 20 mph. Chance of precipitation is 30%.
+                    A 30 percent chance of showers, mainly after 4am. Cloudy, with a low around 45. East wind around 10 mph, with gusts as high as 15 mph.
                 </text>
                 <text>
-                    A slight chance of showers before 10am, then a slight chance of showers after 4pm. Areas of fog before 1pm. Otherwise, cloudy, with a high near 52. Northeast wind 5 to 15 mph. Chance of precipitation is 20%.
+                    A 30 percent chance of showers before 10am. Mostly cloudy, with a high near 65. East northeast wind around 5 mph becoming northwest in the afternoon.
                 </text>
                 <text>
-                    Occasional showers and thunderstorms. Low around 45. East wind 5 to 10 mph, with gusts as high as 15 mph. Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible.
+                    Partly cloudy, with a low around 43. North northeast wind around 5 mph becoming calm.
                 </text>
                 <text>
-                    Scattered showers and thunderstorms. Some of the storms could be severe. Cloudy, with a high near 73. Breezy, with an east southeast wind 10 to 20 mph becoming south in the afternoon. Chance of precipitation is 50%.
+                    Mostly sunny, with a high near 72. Calm wind becoming west southwest around 5 mph in the afternoon.
                 </text>
                 <text>
-                    Showers and thunderstorms likely before 1am. Some of the storms could be severe. Mostly cloudy, with a low around 43. Breezy, with a west southwest wind 20 to 25 mph, with gusts as high as 35 mph. Chance of precipitation is 60%.
+                    Mostly cloudy, with a low around 50. South wind around 5 mph becoming northwest after midnight.
                 </text>
-                <text>Partly sunny, with a high near 57. Breezy.</text>
-                <text>Mostly clear, with a low around 35.</text>
-                <text>Sunny, with a high near 59.</text>
-                <text>Partly cloudy, with a low around 42.</text>
-                <text>Partly sunny, with a high near 67.</text>
+                <text>Mostly sunny, with a high near 63.</text>
                 <text>
-                    A chance of showers and thunderstorms. Mostly cloudy, with a low around 54.
+                    A 20 percent chance of showers. Mostly cloudy, with a low around 45.
                 </text>
                 <text>
-                    Showers and thunderstorms likely. Cloudy, with a high near 68.
+                    A chance of showers. Mostly cloudy, with a high near 60.
                 </text>
                 <text>
-                    A chance of showers and thunderstorms. Mostly cloudy, with a low around 49.
+                    A chance of showers and thunderstorms. Mostly cloudy, with a low around 45.
                 </text>
                 <text>
-                    A slight chance of showers. Mostly sunny, with a high near 62.
+                    A chance of showers. Partly sunny, with a high near 57.
+                </text>
+                <text>Partly cloudy, with a low around 36.</text>
+                <text>Mostly sunny, with a high near 55.</text>
+                <text>
+                    A slight chance of showers. Partly cloudy, with a low around 38.
+                </text>
+                <text>
+                    A slight chance of showers. Mostly sunny, with a high near 56.
                 </text>
             </wordedForecast>
         </parameters>
@@ -215,44 +209,44 @@
         <moreWeatherInformation applicable-location="point1">http://www.nws.noaa.gov/data/obhistory/KARR.html</moreWeatherInformation>
         <time-layout time-coordinate="local">
             <layout-key>k-p1h-n1-1</layout-key>
-            <start-valid-time period-name="current">2015-04-07T21:52:00-05:00</start-valid-time>
+            <start-valid-time period-name="current">2015-04-15T23:52:00-05:00</start-valid-time>
         </time-layout>
         <parameters applicable-location="point1">
             <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">
-                <value>47</value>
+                <value>53</value>
             </temperature>
             <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">
-                <value>44</value>
+                <value>30</value>
             </temperature>
             <humidity type="relative" time-layout="k-p1h-n1-1">
-                <value>90</value>
+                <value>41</value>
             </humidity>
             <weather time-layout="k-p1h-n1-1">
                 <name>Weather Type, Coverage, Intensity</name>
-                <weather-conditions weather-summary=" Fog/Mist"/>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
                 <weather-conditions>
                     <value>
-                        <visibility units="statute miles">2.00</visibility>
+                        <visibility units="statute miles">10.00</visibility>
                     </value>
                 </weather-conditions>
             </weather>
             <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">
                 <name>Conditions Icon</name>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nfg.png
+                    http://forecast.weather.gov/images/wtf/medium/nbkn.png
                 </icon-link>
             </conditions-icon>
             <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
-                <value>90</value>
+                <value>70</value>
             </direction>
             <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">
                 <value>NA</value>
             </wind-speed>
             <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">
-                <value>12</value>
+                <value>8</value>
             </wind-speed>
             <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">
-                <value>29.99</value>
+                <value>30.14</value>
             </pressure>
         </parameters>
     </data>
