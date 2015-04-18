@@ -20,28 +20,31 @@ import java.io.InputStream;
 import java.util.HashMap;
 
 public class MainActivity extends ActionBarActivity {
+    //declare the fields you'll need for the parser
     private static String ns = null;
-
-    private static HashMap<String, String> forecastMap;
+    private static InputStream input;
+    private static HashMap<String, String> forecastMap = new HashMap<>(); //initialize map
+    private static XmlPullParserFactory factory;
+    private static XmlPullParser xml;
     //declare all of the fields you're gonna mess with
-    Button go;
-    ImageView centerPic;
-    TextView displayConditions;
-    EditText enterZip;
-    TextView temperature;
-    TextView dew;
-    TextView humidity;
-    TextView pressure;
-    TextView visibility;
-    TextView windspeed;
-    TextView gust;
-    TextView currTime;
+    private Button go;
+    private ImageView centerPic;
+    private TextView displayConditions;
+    private EditText enterZip;
+    private TextView temperature;
+    private TextView dew;
+    private TextView humidity;
+    private TextView pressure;
+    private TextView visibility;
+    private TextView windspeed;
+    private TextView gust;
+    private TextView currTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //declare all of the fields you're gonna mess with
+        //instantiate all of the fields
         go = (Button)findViewById(R.id.button);
         centerPic = (ImageView)findViewById(R.id.pic);
         displayConditions = (TextView)findViewById(R.id.displayConditions);
@@ -54,40 +57,39 @@ public class MainActivity extends ActionBarActivity {
         windspeed = (TextView)findViewById(R.id.displayWindspeed);
         gust = (TextView)findViewById(R.id.displayGust);
         currTime= (TextView)findViewById(R.id.currentTimeDisplay);
-        InputStream input;
-        forecastMap = new HashMap<>(); //initialize map
-        XmlPullParserFactory factory;
-        XmlPullParser xml;
+
+        populateGUI("60505.xml"); //initially populate using 60505.xml
+        //attach the button and button handler for future handling.
+
+    }
+
+    private void populateGUI(String zip){
         try{
             //create parser
             factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(true);
             xml = factory.newPullParser();
-            input = getAssets().open("60018.xml", AssetManager.ACCESS_BUFFER);
-
+            input = getAssets().open(zip, AssetManager.ACCESS_BUFFER);
             xml.setInput(input, null);
-            //xml.nextTag();
             Log.i("--- TEST ---", "About to enter the parser");
             parse(xml); //populate yo map
-            populateFromMap(); //put shit in they place
-
         }
         catch(Exception e){
             e.printStackTrace();
-            Log.i("no","well fuck you");
+            Log.i("--- TEST ---", "ERROR");
         }
-
-    }
-    public void populateFromMap(){
+        //got this from here: http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
+        int res = getResources().getIdentifier(forecastMap.get("icon-link"), "drawable", this.getPackageName());
         //fill text fields
+        centerPic.setImageResource(res);
         temperature.setText(forecastMap.get("apparent")+" F");
         dew.setText(forecastMap.get("dew")+" F");
         humidity.setText(forecastMap.get("humidity"));
         displayConditions.setText(forecastMap.get("weather-summary"));
         pressure.setText(forecastMap.get("pressure") + " in");
         visibility.setText(forecastMap.get("visibility")+" mi");
-
-
+        windspeed.setText(forecastMap.get("windspeed"));
+        gust.setText(forecastMap.get("gust"));
     }
 
     @Override
@@ -133,12 +135,11 @@ public class MainActivity extends ActionBarActivity {
                     case "temperature": {
                         String attr = parser.getAttributeValue(ns, "type");
                         if (attr.equals("dew point")) {
-                            //eventType = parser.next(); //get next start tag?
-                            String contents = readText(parser);
+                            String contents = readText(parser,"value");
                             Log.i("--- TEST ---", contents);
                             forecastMap.put("dew", contents);
                         } else if (attr.equals("apparent")) {
-                            String contents = readText(parser);
+                            String contents = readText(parser,"value");
                             Log.i("--- TEST ---", contents);
                             forecastMap.put("apparent", contents);
                         }
@@ -147,7 +148,7 @@ public class MainActivity extends ActionBarActivity {
                     case "direction":
                     case "pressure":
                     case "humidity": {
-                        String result = readText(parser);
+                        String result = readText(parser, "value");
                         Log.i("--- TEST ---", result+"?");
                         forecastMap.put(tagname,result);
                     }
@@ -155,26 +156,44 @@ public class MainActivity extends ActionBarActivity {
                         if(parser.getAttributeValue(ns, "weather-summary") != null){
                             //its the other thing
                             String attr = parser.getAttributeValue(ns, "weather-summary");
-                            Log.i("---- TEST ----",attr);
+                            Log.i("--- TEST ---",attr);
                             forecastMap.put("weather-summary",attr);
                         }
-                        else{
+                        else if(tagname.equals("weather-conditions")){
                             //next tag is value. Unfortunately, the value is in fucking visibility
-                            parser.nextTag();
-                            Log.i("--- TEST ---", "visibility");
+                            Log.i("--- TEST ---", "On to bisibilitee");
                         }
                     }
                     break;
+                    case "icon-link": {
+                        String result = readText(parser, tagname);
+                        String array[] = result.split("\\/"); //split on /
+                        String filename = array[array.length-1]; //filename and get the name alone with .split("\\.")[0]
+                        Log.i("--- TEST ---", "got the icon link");
+                        Log.i("--- TEST ---", result);
+                        Log.i("--- TEST ---",filename);
+                        forecastMap.put("icon-link",filename);
+                    }
+                    break;
                     case "visibility": {
-                        String result = "";
-                        parser.require(XmlPullParser.START_TAG, ns, "visibility");
-                        if (parser.next() == XmlPullParser.TEXT) {
-                            result = parser.getText();
-                            parser.nextTag();
-                        }
-                        parser.require(XmlPullParser.END_TAG, ns, "visibility");
-                        Log.i("---- TEST ----", "visibility was "+result);
+                        String result = readText(parser, "visibility");
+                        Log.i("--- TEST ---", "visibility was "+result);
                         forecastMap.put("visibility", result);
+                    }
+                    break;
+                    case "wind-speed":{
+                        Log.i("--- TEST ---", "INSIDE WIND_SPEED");
+                        String result = "";
+                        if(parser.getAttributeValue(ns, "type").equals("gust")){
+                            result = readText(parser,"value");
+                            forecastMap.put("gust", result);
+                            Log.i("--- TEST ---", "gusts of "+result);
+                        }
+                        else if(parser.getAttributeValue(ns,"type").equals("sustained")){
+                            result = readText(parser,"value");
+                            forecastMap.put("windspeed", result);
+                            Log.i("--- TEST ---", "got windspeed of "+result);
+                        }
                     }
                     break;
                 }
@@ -188,17 +207,18 @@ public class MainActivity extends ActionBarActivity {
         Log.i("--- TEST ---", "DONE.");
     }
 
-    private String readText(XmlPullParser parser) throws IOException, XmlPullParserException {
-        Log.i("---- TEST ----","READING???");
+    private String readText(XmlPullParser parser, String tag) throws IOException, XmlPullParserException {
+        Log.i("--- TEST ---","READING???");
         String result = "";
-        parser.nextTag();
-        parser.require(XmlPullParser.START_TAG, ns, "value");
+        if(tag.equals("value")) {
+            parser.nextTag();
+        }
+        parser.require(XmlPullParser.START_TAG, ns, tag);
         if (parser.next() == XmlPullParser.TEXT) {
             result = parser.getText();
             parser.nextTag();
         }
-        parser.require(XmlPullParser.END_TAG, ns, "value");
+        parser.require(XmlPullParser.END_TAG, ns, tag);
         return result;
     }
-
 }
