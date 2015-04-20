@@ -1,25 +1,24 @@
 <dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
     <head>
         <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
-            <creation-date refresh-frequency="PT1H">2015-04-19T14:29:42-07:00</creation-date>
+            <creation-date refresh-frequency="PT1H">2015-04-19T14:08:16-07:00</creation-date>
             <category>current observations and forecast</category>
         </product>
         <source>
-            <production-center>San Francisco Bay Area/Monterey, CA</production-center>
-            <credit>http://www.wrh.noaa.gov/mtr</credit>
+            <production-center>Las Vegas, NV</production-center>
+            <credit>http://www.wrh.noaa.gov/vef</credit>
             <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
         </source>
     </head>
     <data type="forecast">
         <location>
             <location-key>point1</location-key>
-            <description>Carmel, CA</description>
-            <point latitude="36.54" longitude="-121.89"/>
-            <city state="CA">Carmel</city>
-            <height datum="mean sea level">36</height>
+            <point latitude="35.95" longitude="-115.12"/>
+            <area-description>3 Miles SE Las Vegas-Henderson Airport NV</area-description>
+            <height datum="mean sea level" height-units="feet">2694</height>
         </location>
         <moreWeatherInformation applicable-location="point1">
-            http://forecast.weather.gov/MapClick.php?lat=36.54&amp;lon=-121.89
+            http://forecast.weather.gov/MapClick.php?lat=35.95&amp;lon=-115.12
         </moreWeatherInformation>
         <time-layout time-coordinate="local" summarization="12hourly">
             <layout-key>k-p12h-n14-1</layout-key>
@@ -61,23 +60,23 @@
         <parameters applicable-location="point1">
             <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
                 <name>Daily Minimum Temperature</name>
-                <value>45</value>
-                <value>47</value>
-                <value>48</value>
-                <value>46</value>
-                <value>47</value>
-                <value>46</value>
-                <value>46</value>
+                <value>60</value>
+                <value>60</value>
+                <value>58</value>
+                <value>55</value>
+                <value>53</value>
+                <value>56</value>
+                <value>57</value>
             </temperature>
             <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-2">
                 <name>Daily Maximum Temperature</name>
-                <value>61</value>
-                <value>61</value>
-                <value>61</value>
-                <value>60</value>
-                <value>61</value>
-                <value>61</value>
-                <value>62</value>
+                <value>87</value>
+                <value>84</value>
+                <value>76</value>
+                <value>73</value>
+                <value>73</value>
+                <value>77</value>
+                <value>82</value>
             </temperature>
             <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-1">
                 <name>12 Hourly Probability of Precipitation</name>
@@ -86,8 +85,8 @@
                 <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
-                <value xsi:nil="true"/>
-                <value xsi:nil="true"/>
+                <value>20</value>
+                <value>20</value>
                 <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
                 <value xsi:nil="true"/>
@@ -98,16 +97,16 @@
             </probability-of-precipitation>
             <weather time-layout="k-p12h-n14-1">
                 <name>Weather Type, Coverage, Intensity</name>
-                <weather-conditions weather-summary="Chance Drizzle"/>
-                <weather-conditions weather-summary="Chance Drizzle"/>
-                <weather-conditions weather-summary="Chance Drizzle"/>
-                <weather-conditions weather-summary="Chance Drizzle"/>
-                <weather-conditions weather-summary="Mostly Cloudy"/>
-                <weather-conditions weather-summary="Mostly Cloudy"/>
-                <weather-conditions weather-summary="Mostly Cloudy"/>
-                <weather-conditions weather-summary="Mostly Cloudy"/>
-                <weather-conditions weather-summary="Mostly Cloudy"/>
-                <weather-conditions weather-summary="Partly Sunny"/>
+                <weather-conditions weather-summary="Partly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Partly Cloudy"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Partly Cloudy"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
+                <weather-conditions weather-summary="Chance Showers"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
                 <weather-conditions weather-summary="Mostly Cloudy"/>
                 <weather-conditions weather-summary="Mostly Sunny"/>
                 <weather-conditions weather-summary="Partly Cloudy"/>
@@ -116,34 +115,34 @@
             <conditions-icon type="forecast-NWS" time-layout="k-p12h-n14-1">
                 <name>Conditions Icon</name>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nfg.png
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/fg.png
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nfg.png
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/fg.png
+                    http://forecast.weather.gov/images/wtf/medium/sct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nbkn.png
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/bkn.png
+                    http://forecast.weather.gov/images/wtf/medium/shra20.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nbkn.png
+                    http://forecast.weather.gov/images/wtf/medium/nshra20.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/bkn.png
+                    http://forecast.weather.gov/images/wtf/medium/shra.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/nbkn.png
+                    http://forecast.weather.gov/images/wtf/medium/nshra.png
                 </icon-link>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/bkn.png
+                    http://forecast.weather.gov/images/wtf/medium/shra.png
                 </icon-link>
                 <icon-link>
                     http://forecast.weather.gov/images/wtf/medium/nbkn.png
@@ -158,62 +157,72 @@
                     http://forecast.weather.gov/images/wtf/medium/sct.png
                 </icon-link>
             </conditions-icon>
-            <wordedForecast time-layout="k-p12h-n14-1" dataSource="mtrNetcdf" wordGenerator="markMitchell">
+            <wordedForecast time-layout="k-p12h-n14-1" dataSource="vefNetcdf" wordGenerator="markMitchell">
                 <name>Text Forecast</name>
                 <text>
-                    A chance of drizzle after 2am. Patchy fog after 11pm. Otherwise, increasing clouds, with a low around 45. Light west wind.
+                    Partly cloudy, with a low around 60. West southwest wind 5 to 7 mph.
                 </text>
                 <text>
-                    A chance of drizzle before 11am. Patchy fog before 11am. Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 61. Light west wind becoming west southwest 11 to 16 mph in the morning. Winds could gust as high as 21 mph.
+                    Mostly sunny, with a high near 87. Southwest wind 5 to 8 mph becoming south southeast in the morning.
                 </text>
                 <text>
-                    A chance of drizzle after 11pm. Patchy fog after 11pm. Otherwise, increasing clouds, with a low around 47. Southwest wind 5 to 10 mph.
+                    Partly cloudy, with a low around 60. South southwest wind 5 to 9 mph.
                 </text>
                 <text>
-                    A chance of drizzle before 8am. Patchy fog before 11am. Otherwise, mostly cloudy, with a high near 61. Calm wind becoming west southwest 5 to 8 mph in the afternoon.
+                    Mostly sunny, with a high near 84. South southeast wind 5 to 11 mph.
                 </text>
                 <text>
-                    Mostly cloudy, with a low around 48. West southwest wind 8 to 14 mph.
+                    Partly cloudy, with a low around 58. South southwest wind 6 to 11 mph.
                 </text>
-                <text>Mostly cloudy, with a high near 61.</text>
-                <text>Mostly cloudy, with a low around 46.</text>
-                <text>Mostly cloudy, with a high near 60.</text>
-                <text>Mostly cloudy, with a low around 47.</text>
-                <text>Partly sunny, with a high near 61.</text>
-                <text>Mostly cloudy, with a low around 46.</text>
-                <text>Mostly sunny, with a high near 61.</text>
-                <text>Partly cloudy, with a low around 46.</text>
-                <text>Mostly sunny, with a high near 62.</text>
+                <text>
+                    A 20 percent chance of showers. Partly sunny, with a high near 76.
+                </text>
+                <text>
+                    A 20 percent chance of showers. Mostly cloudy, with a low around 55.
+                </text>
+                <text>
+                    A chance of showers. Mostly cloudy, with a high near 73.
+                </text>
+                <text>
+                    A slight chance of showers. Mostly cloudy, with a low around 53.
+                </text>
+                <text>
+                    A slight chance of showers. Partly sunny, with a high near 73.
+                </text>
+                <text>Mostly cloudy, with a low around 56.</text>
+                <text>Mostly sunny, with a high near 77.</text>
+                <text>Partly cloudy, with a low around 57.</text>
+                <text>Mostly sunny, with a high near 82.</text>
             </wordedForecast>
         </parameters>
     </data>
     <data type="current observations">
         <location>
             <location-key>point1</location-key>
-            <point latitude="36.59056" longitude="-121.84750"/>
-            <area-description>Monterey, Monterey Peninsula Airport, CA</area-description>
-            <height datum="mean sea level" height-units="feet">253</height>
+            <point latitude="35.97278" longitude="-115.13444"/>
+            <area-description>Las Vegas, Henderson Executive Airport, NV</area-description>
+            <height datum="mean sea level" height-units="feet">2493</height>
         </location>
         <moreWeatherInformation applicable-location="point1">
-            http://www.wrh.noaa.gov/total_forecast/other_obs.php?wfo=mtr&amp;zone=CAZ530
+            http://www.wrh.noaa.gov/total_forecast/other_obs.php?wfo=vef&amp;zone=NVZ020
         </moreWeatherInformation>
         <time-layout time-coordinate="local">
             <layout-key>k-p1h-n1-1</layout-key>
-            <start-valid-time period-name="current">2015-04-19T20:54:00</start-valid-time>
+            <start-valid-time period-name="current">2015-04-19T20:56:00</start-valid-time>
         </time-layout>
         <parameters applicable-location="point1">
             <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">
-                <value>55</value>
+                <value>77</value>
             </temperature>
             <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">
-                <value>48</value>
+                <value>20</value>
             </temperature>
             <humidity type="relative" time-layout="k-p1h-n1-1">
-                <value>77</value>
+                <value>12</value>
             </humidity>
             <weather time-layout="k-p1h-n1-1">
                 <name>Weather Type, Coverage, Intensity</name>
-                <weather-conditions weather-summary="Overcast"/>
+                <weather-conditions weather-summary="Fair"/>
                 <weather-conditions>
                     <value>
                         <visibility units="statute miles">10.00</visibility>
@@ -223,20 +232,20 @@
             <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">
                 <name>Conditions Icon</name>
                 <icon-link>
-                    http://forecast.weather.gov/images/wtf/medium/novc.png
+                    http://forecast.weather.gov/images/wtf/medium/nsct.png
                 </icon-link>
             </conditions-icon>
             <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
-                <value>0</value>
+                <value>200</value>
             </direction>
             <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">
                 <value>NA</value>
             </wind-speed>
             <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">
-                <value>0</value>
+                <value>10</value>
             </wind-speed>
             <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">
-                <value>29.93</value>
+                <value>29.82</value>
             </pressure>
         </parameters>
     </data>

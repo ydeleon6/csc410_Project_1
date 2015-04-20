@@ -1,0 +1,257 @@
+<dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+    <head>
+        <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+            <creation-date refresh-frequency="PT1H">2015-04-19T10:44:21-06:00</creation-date>
+            <category>current observations and forecast</category>
+        </product>
+        <source>
+            <production-center>Denver-Boulder, CO</production-center>
+            <credit>http://www.weather.gov/bou</credit>
+            <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+        </source>
+    </head>
+    <data type="forecast">
+        <location>
+            <location-key>point1</location-key>
+            <point latitude="40.05" longitude="-105.22"/>
+            <area-description>2 Miles ENE Boulder CO</area-description>
+            <height datum="mean sea level" height-units="feet">5226</height>
+        </location>
+        <moreWeatherInformation applicable-location="point1">
+            http://forecast.weather.gov/MapClick.php?lat=40.05&amp;lon=-105.22
+        </moreWeatherInformation>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p12h-n13-1</layout-key>
+            <start-valid-time period-name="This Afternoon">2015-04-19T12:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Tonight">2015-04-19T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Monday">2015-04-20T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2015-04-20T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2015-04-21T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Tuesday Night">2015-04-21T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2015-04-22T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Wednesday Night">2015-04-22T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2015-04-23T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2015-04-23T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Friday">2015-04-24T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Friday Night">2015-04-24T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Saturday">2015-04-25T06:00:00-06:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p24h-n7-1</layout-key>
+            <start-valid-time period-name="This Afternoon">2015-04-19T12:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Monday">2015-04-20T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Tuesday">2015-04-21T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Wednesday">2015-04-22T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Thursday">2015-04-23T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Friday">2015-04-24T06:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Saturday">2015-04-25T06:00:00-06:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="12hourly">
+            <layout-key>k-p24h-n6-2</layout-key>
+            <start-valid-time period-name="Tonight">2015-04-19T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Monday Night">2015-04-20T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Tuesday Night">2015-04-21T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Wednesday Night">2015-04-22T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Thursday Night">2015-04-23T18:00:00-06:00</start-valid-time>
+            <start-valid-time period-name="Friday Night">2015-04-24T18:00:00-06:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+                <name>Daily Maximum Temperature</name>
+                <value>53</value>
+                <value>53</value>
+                <value>62</value>
+                <value>67</value>
+                <value>59</value>
+                <value>60</value>
+                <value>64</value>
+            </temperature>
+            <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n6-2">
+                <name>Daily Minimum Temperature</name>
+                <value>30</value>
+                <value>33</value>
+                <value>38</value>
+                <value>40</value>
+                <value>41</value>
+                <value>41</value>
+            </temperature>
+            <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n13-1">
+                <name>12 Hourly Probability of Precipitation</name>
+                <value xsi:nil="true"/>
+                <value>50</value>
+                <value>20</value>
+                <value>20</value>
+                <value>10</value>
+                <value>20</value>
+                <value>20</value>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </probability-of-precipitation>
+            <weather time-layout="k-p12h-n13-1">
+                <name>Weather Type, Coverage, Intensity</name>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
+                <weather-conditions weather-summary="Chance Rain/Snow"/>
+                <weather-conditions weather-summary="Slight Chc Rain/Snow"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Chance Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+                <weather-conditions weather-summary="Slight Chc Showers"/>
+                <weather-conditions weather-summary="Slight Chc Thunderstorms"/>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p12h-n13-1">
+                <name>Conditions Icon</name>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/bkn.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nrasn50.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/rasn20.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nscttsra20.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/hi_tsra10.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/hi_ntsra20.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/hi_tsra20.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nscttsra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/hi_tsra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/ntsra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/tsra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/nshra.png
+                </icon-link>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/scttsra.png
+                </icon-link>
+            </conditions-icon>
+            <hazards time-layout="">
+                <name>Watches, Warnings, and Advisories</name>
+                <hazard-conditions>
+                    <hazard headline="Hazardous Weather Outlook">
+                        <hazardTextURL>
+                            http://forecast.weather.gov/showsigwx.php?warnzone=COZ039&amp;warncounty=COC013&amp;firewxzone=COZ239&amp;local_place1=2+Miles+ENE+Boulder+CO&amp;product1=Hazardous+Weather+Outlook
+                        </hazardTextURL>
+                    </hazard>
+                </hazard-conditions>
+            </hazards>
+            <wordedForecast time-layout="k-p12h-n13-1" dataSource="bouNetcdf" wordGenerator="markMitchell">
+                <name>Text Forecast</name>
+                <text>
+                    Mostly cloudy, with a high near 53. North northeast wind 6 to 9 mph.
+                </text>
+                <text>
+                    A slight chance of rain showers before 10pm, then a slight chance of rain and snow showers between 10pm and midnight, then a chance of snow showers after midnight. Cloudy, with a low around 30. North wind 5 to 7 mph becoming calm in the evening. Chance of precipitation is 50%. New snow accumulation of less than a half inch possible.
+                </text>
+                <text>
+                    A slight chance of snow showers before 10am, then a slight chance of rain and snow showers between 10am and 11am, then a slight chance of rain showers after 11am. Some thunder is also possible. Mostly cloudy, with a high near 53. Light and variable wind becoming east southeast around 6 mph in the afternoon. Chance of precipitation is 20%.
+                </text>
+                <text>
+                    A 20 percent chance of showers and thunderstorms before midnight. Mostly cloudy, with a low around 33. West southwest wind 3 to 6 mph.
+                </text>
+                <text>
+                    A 10 percent chance of showers and thunderstorms after noon. Mostly sunny, with a high near 62. Light and variable wind.
+                </text>
+                <text>
+                    A 20 percent chance of showers and thunderstorms before midnight. Partly cloudy, with a low around 38.
+                </text>
+                <text>
+                    A 20 percent chance of showers and thunderstorms after noon. Mostly sunny, with a high near 67.
+                </text>
+                <text>
+                    A slight chance of showers and thunderstorms. Mostly cloudy, with a low around 40.
+                </text>
+                <text>
+                    A slight chance of showers and thunderstorms. Mostly sunny, with a high near 59.
+                </text>
+                <text>
+                    A chance of showers and thunderstorms. Mostly cloudy, with a low around 41.
+                </text>
+                <text>
+                    A slight chance of rain and thunderstorms. Mostly cloudy, with a high near 60.
+                </text>
+                <text>
+                    A slight chance of showers. Mostly cloudy, with a low around 41.
+                </text>
+                <text>
+                    A slight chance of showers and thunderstorms. Partly sunny, with a high near 64.
+                </text>
+            </wordedForecast>
+        </parameters>
+    </data>
+    <data type="current observations">
+        <location>
+            <location-key>point1</location-key>
+            <point latitude="40.04" longitude="-105.23"/>
+            <area-description>Boulder Municipal Airport, CO</area-description>
+            <height datum="mean sea level" height-units="feet">5288</height>
+        </location>
+        <moreWeatherInformation applicable-location="point1">http://www.nws.noaa.gov/data/obhistory/KBDU.html</moreWeatherInformation>
+        <time-layout time-coordinate="local">
+            <layout-key>k-p1h-n1-1</layout-key>
+            <start-valid-time period-name="current">2015-04-19T12:18:00-06:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">
+                <value>46</value>
+            </temperature>
+            <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">
+                <value>30</value>
+            </temperature>
+            <humidity type="relative" time-layout="k-p1h-n1-1">
+                <value>53</value>
+            </humidity>
+            <weather time-layout="k-p1h-n1-1">
+                <name>Weather Type, Coverage, Intensity</name>
+                <weather-conditions weather-summary="Mostly Cloudy"/>
+                <weather-conditions>
+                    <value>
+                        <visibility units="statute miles">10.00</visibility>
+                    </value>
+                </weather-conditions>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">
+                <name>Conditions Icon</name>
+                <icon-link>
+                    http://forecast.weather.gov/images/wtf/medium/bkn.png
+                </icon-link>
+            </conditions-icon>
+            <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
+                <value>160</value>
+            </direction>
+            <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">
+                <value>NA</value>
+            </wind-speed>
+            <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">
+                <value>6</value>
+            </wind-speed>
+            <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">
+                <value>30.10</value>
+            </pressure>
+        </parameters>
+    </data>
+</dwml>
