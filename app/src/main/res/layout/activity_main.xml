@@ -78,8 +78,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/pic"
-        android:visibility="visible"
-        android:src="@drawable/nbkn"/>
+        android:visibility="visible"/>
 </FrameLayout>
     <GridLayout
         android:layout_width="wrap_content"

@@ -1,7 +1,6 @@
 package com.example.deleon118.project1;
 
 import android.content.res.AssetManager;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -20,7 +19,6 @@ import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 
@@ -68,7 +66,7 @@ public class MainActivity extends ActionBarActivity {
 
         go.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                populateGUI(enterZip.getText() + ".xml");
+                populateGUI(enterZip.getText().toString() + ".xml");
                 imperialRadio.toggle();
             }
         });
@@ -181,14 +179,9 @@ public class MainActivity extends ActionBarActivity {
         }
         //got this from here: http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
         InputStream is = null;
-        try {
-            is = (InputStream) new URL(forecastMap.get("icon-link")).getContent();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Drawable d = Drawable.createFromStream(is, "src_name");
         //fill text fields
-        centerPic.setImageDrawable(d);
+        int res = getResources().getIdentifier("@drawable/"+forecastMap.get("icon-link"),ns,this.getPackageName());
+        centerPic.setImageResource(res);
         temperature.setText(forecastMap.get("apparent")+" F");
         dew.setText(forecastMap.get("dew")+" F");
         humidity.setText(forecastMap.get("humidity") + "%");
@@ -275,12 +268,12 @@ public class MainActivity extends ActionBarActivity {
                             break;
                             case "icon-link": {
                                 String result = readText(parser, tagname);
-                                //String array[] = result.split("\\/"); //split on /
-                                //String filename = array[array.length-1]; //filename and get the name alone with .split("\\.")[0]
+                                String array[] = result.split("\\/"); //split on /
+                                String filename = array[array.length-1].split("\\.")[0]; //filename and get the name alone with .split("\\.")[0]
                                 Log.i("--- TEST ---", "got the icon link");
                                 Log.i("--- TEST ---", result);
                                 //Log.i("--- TEST ---",filename);
-                                forecastMap.put("icon-link",result);
+                                forecastMap.put("icon-link",filename);
                             }
                             break;
                             case "start-valid-time":{
